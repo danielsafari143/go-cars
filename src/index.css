@@ -1,0 +1,212 @@
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.nav-items {
+ background-color: rgb(40, 57, 159);
+ color: white;
+ display: flex;
+ flex-direction: row;
+ font-size: 16px;
+ gap : 20px;
+ list-style: none;
+ font-family: 'Poppins', sans-serif;
+ box-sizing: border-box;
+}
+
+
+.nav-items a {
+ color: white;
+ text-decoration: none;
+}
+
+.nav-logo {
+  color: rgb(252, 252, 252);
+}
+
+.Header {
+  background-color: rgb(40, 57, 159);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 40px 0px 40px;
+  box-sizing: border-box;
+  position:fixed;
+  width: 100%;
+}
+
+.nav-items-hr {
+  border-width: 0.5px;
+  width: 28px;
+  border-style: solid;
+  height: 1px;
+  -webkit-transform:rotate(180deg);
+  background-color: #DC7000;
+  color: #DC7000;
+  text-align: left;
+  padding: 0;
+  margin: 2px 0 0 0;
+  box-sizing: border-box;
+}
+.nav-items-list {
+  display: flex;
+  padding: 0;
+  flex-direction:column;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.logo-side {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+.humberger {
+  display: none;
+}
+.main-title {
+  font-size: 30px;
+}
+.main-section {
+  background-color: rgb(255, 255, 255);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  color:rgb(40, 57, 159);
+  padding-top: 100px;
+  padding-bottom: 100px;
+  font-family: 'Poppins', sans-serif;
+  box-sizing:border-box;
+}
+.main-car-img {
+  object-fit: contain;
+}
+.main-button {
+  height: 40px;
+  width: 150px;
+  border-radius: 40px;
+  background-color: rgb(250, 131, 5);
+  color: white;
+  border:none;
+  margin-top: 30px;
+  font-family: 'Poppins', sans-serif;
+}
+.vehicul-items {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 50px;
+  list-style:none;
+  justify-content: center;
+}
+.vehicul-items-item {
+  width: 180px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.vehicul-title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  color: #DC7000;
+  font-size: 25px;
+}
+.vehicul-section {
+  padding: 10px 50px 10px 50px;
+  height: 600px;
+  padding-bottom: 100px;
+}
+.vehicul-title-button {
+  height: 25px;
+}
+.vehicul-items-li {
+  border: 1px solid rgb(192, 191, 191);
+  border-radius: 10px;
+  height: auto;
+  width: auto;
+  padding: 10px;
+  background-color: rgba(245, 246, 248, 1);
+}
+.vehicul-items-sub-item {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  gap: 2px;
+}
+.vehicul-items-sub {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  padding-top: 20px;
+  color: #DC7000;
+  font-weight: 500;
+}
+.vehicul-items-price {
+  
+ color: rgb(0, 0, 0);
+ font-family: 'Poppins', sans-serif;
+ padding: 0;
+ margin: 0;
+ margin-top: 10px;
+ display: flex;
+ flex-direction: row;
+ align-items: center;
+ justify-content: space-between;
+}
+.carPrice{
+  font-size: small;
+  font-weight: bolder;
+  color: rgb(44, 182, 125, 1)
+}
+.vehicul-items-price p {
+ 
+  padding: 0;
+  padding-top: 5px;
+  margin: 0;
+}
+@media only screen and (max-width:422px) {
+  .nav-items {
+    display: none;
+  }
+  .logo-side {
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+  .humberger {
+    display: block;
+  }
+  .vehicul-items{
+    display: flex;
+    flex-direction: column;
+  }
+  .vehicul-title {
+    font-size: 5vw;
+  } 
+}
+
+
