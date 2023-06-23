@@ -1,6 +1,7 @@
 import React from "react";
 import { ReactDOM } from "react";
 import '../index.css';
+import { Link } from "react-router-dom";
 
 class Header extends React.Component{
     
@@ -21,7 +22,7 @@ class Header extends React.Component{
                     counter += 1;
                     return (
                         <li value={counter} key={counter} className="nav-items-list" onMouseOver={this.handleHr}>
-                            <a href="#home">{items}</a> 
+                            <Link to="/">{items}</Link> 
                             <hr style={{display : this.state.displayLine[counter]}} className="nav-items-hr"></hr>
                         </li>
                         );
